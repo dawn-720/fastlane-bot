@@ -98,6 +98,7 @@ class ArbitrageFinderBase:
         """
         self.ConfigObj.logger.debug("*************")
         self.ConfigObj.logger.debug(f"New best profit: {profit}")
+        self.ConfigObj.logger.debug(f"New source token: {src_token}")
 
         # Update the best profit and source token
         best_profit = profit
@@ -109,7 +110,7 @@ class ArbitrageFinderBase:
         best_trade_instructions = trade_instructions
 
         self.ConfigObj.logger.debug(
-            f"best_trade_instructions_df: {best_trade_instructions_df}"
+            f"best_trade_instructions_df: \n{best_trade_instructions_df}"
         )
 
         # Update the optimal operations
