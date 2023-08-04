@@ -165,6 +165,8 @@ class EthereumNetwork(NetworkBase):
         """
         logger.info(f"Connecting to {self.network_name} network")
 
+        print(f"Connecting to {self.network_name} network")
+
         if self.is_connected:
             return
 
@@ -193,3 +195,6 @@ class EthereumNetwork(NetworkBase):
         self.web3 = Web3(Web3.HTTPProvider(self.provider_url))
         logger.info(f"Connected to {self.network_id} network")
         logger.info(f"Connected to {self.web3.provider.endpoint_uri} network")
+
+        print(f"Connected to {self.network_id} network")
+        print(f"Connected to {self.web3.provider.endpoint_uri} network")
