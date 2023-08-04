@@ -238,7 +238,7 @@ class CarbonBot(CarbonBotBase):
     AM_MULTI = "multi"
     AM_MULTI_TRIANGLE = "multi_triangle"
     AM_BANCOR_V3 = "bancor_v3"
-    RUN_FLASHLOAN_TOKENS = [T.WETH, T.DAI, T.USDC, T.USDT, T.WBTC, T.BNT, T.NATIVE_ETH]
+    RUN_FLASHLOAN_TOKENS = [T.WETH, T.DAI, T.USDC, T.USDT, T.WBTC, T.BNT, T.NATIVE_ETH, T.LINK, T.UNI, T.SUSHI, T.MATIC, T.SHIB, T.CRV]
     RUN_SINGLE = "single"
     RUN_CONTINUOUS = "continuous"
     RUN_POLLING_INTERVAL = 60  # default polling interval in seconds
