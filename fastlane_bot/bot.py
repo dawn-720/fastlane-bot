@@ -459,6 +459,8 @@ class CarbonBot(CarbonBotBase):
         random_mode = self.AO_CANDIDATES if randomizer else None
         arb_mode = self.AM_SINGLE if arb_mode is None else arb_mode
         arb_finder = self._get_arb_finder(arb_mode)
+        self.ConfigObj.logger.info(f"flashloan_tokens {len(flashloan_tokens)}:")
+        self.ConfigObj.logger.info(flashloan_tokens)
         finder = arb_finder(
             flashloan_tokens=flashloan_tokens,
             CCm=CCm,
